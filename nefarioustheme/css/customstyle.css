@@ -1,4 +1,81 @@
-h1 {
-  color: red;
-  text-align: center;
+* {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  transition-duration: 0.5s;
+}
+
+/* Lets have a different CSS class for responsive handling */
+
+.Header {
+  background-color: rgb(86, 83, 80);
+  width: 100%;
+  display: inline-block;
+  height: 75px;
+  overflow: hidden;
+}
+
+.HeaderListItem:hover {
+  background-color: white;
+  color: black;
+}
+
+.HeaderListIcon {
+  width: 50px;
+  height: 50px;
+  padding-top: 10px;
+  float: right;
+  padding-right: 10px;
+  display: none;
+
+}
+
+.HeaderName {
+  font-family : Raleway;
+  font-weight : bold;
+  font-size : 25px;
+  padding-left: 30px;
+  padding-top: 20px;
+  float: left;
+  color : #FFFFFF;
+  color : rgb(255, 255, 255);
+}
+
+#NavOptions li + li:before {
+    content: " | ";
+    padding: 0 0px;
+}
+
+
+.HeaderListItem {
+  display: inline-block;
+  padding-right: 10px;
+  font-family : Raleway;
+  font-weight: lighter;
+  font-size : 20px;
+  color : #D1D3D4;
+  color : rgb(209, 211, 212);
+}
+
+.HeaderList {
+  padding-top: 23px;
+  float: right;
+  padding-right: 30px;
+}
+
+@media (max-width: 840px) {
+
+  .HeaderList {
+    display: none;
+    content: none;
+  }
+
+  .HeaderListIcon {
+    display: inline-block;
+  }
+
+  .HeaderListItem {
+    display: none;
+  }
+
 }

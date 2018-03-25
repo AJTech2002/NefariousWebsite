@@ -1,4 +1,5 @@
-<?php get_header(); ?>
+<!DOCTYPE html>
 <html>
-<h1>Suh dude</h1>
+<?php get_header(); ?>
+
 </html>
