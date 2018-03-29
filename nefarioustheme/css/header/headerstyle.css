@@ -4,7 +4,6 @@
   border: 0;
   transition-duration: 0.5s;
 }
-
 /* Lets have a different CSS class for responsive handling */
 
 .Header {
@@ -20,15 +19,6 @@
   color: black;
 }
 
-.HeaderListIcon {
-  width: 50px;
-  height: 50px;
-  padding-top: 10px;
-  float: right;
-  padding-right: 10px;
-  display: none;
-
-}
 
 .HeaderName {
   font-family : Raleway;
@@ -41,15 +31,41 @@
   color : rgb(255, 255, 255);
 }
 
-#NavOptions li + li:before {
-    content: " | ";
-    padding: 0 0px;
+
+
+.HeaderListPhone {
+  display: none;
+  content: none;
+
 }
 
+.HeaderListPhoneItem:hover {
+  background-color: white;
+  color: black;
+}
+
+.HeaderListPhoneItem {
+  padding-top: 0px;
+  margin-top: 0px;
+  display: none;
+    content: none;
+    text-align: center;
+    font-family : Raleway;
+    font-weight: lighter;
+    font-size : 20px;
+    color : #D1D3D4;
+    color : rgb(209, 211, 212);
+}
 
 .HeaderListItem {
+
+  position: relative;
+  top: -50px;
+  text-align: center;
   display: inline-block;
-  padding-right: 10px;
+  padding: 10px;
+  padding-top: 50px;
+  padding-bottom: 50px;
   font-family : Raleway;
   font-weight: lighter;
   font-size : 20px;
@@ -58,24 +74,8 @@
 }
 
 .HeaderList {
+  opacity: 1;
   padding-top: 23px;
   float: right;
   padding-right: 30px;
-}
-
-@media (max-width: 840px) {
-
-  .HeaderList {
-    display: none;
-    content: none;
-  }
-
-  .HeaderListIcon {
-    display: inline-block;
-  }
-
-  .HeaderListItem {
-    display: none;
-  }
-
 }

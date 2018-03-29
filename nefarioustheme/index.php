@@ -1,5 +1,9 @@
+<?php get_header(); ?>
 <!DOCTYPE html>
 <html>
-<?php get_header(); ?>
+
+
+
+
 
 </html>

@@ -1,0 +1,50 @@
+@media (max-width: 840px) {
+
+  .HeaderList {
+      float:  none;
+      display: none;
+      opacity: 0;
+  }
+
+  #NavOptions li + li:before {
+      content: "";
+      padding: 0 0px;
+  }
+
+  .HeaderListPhone {
+    display: block;
+    content: normal;
+
+  }
+
+  .HeaderName {
+    text-align: center;
+    float: none;
+  }
+
+  .HeaderListIcon {
+    display: inline-block;
+  }
+
+  .HeaderListItem {
+    display: block;
+    color: black;
+    float: none;
+    opacity: 0;
+  }
+
+  .PhoneList {
+    display: block;
+    position: relative;
+    top: -10px;
+    background-color: rgb(86, 83, 80);
+  }
+
+  .HeaderListPhoneItem {
+    padding-top: 7px;
+    padding-bottom: 7px;
+    display: block;
+    content: normal;
+  }
+
+}

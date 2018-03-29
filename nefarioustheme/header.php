@@ -3,6 +3,7 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 
     <title>NEFARIOUS</title>
 
@@ -19,13 +20,19 @@
 
       </ul>
 
-      <img src="<?php echo get_template_directory_uri() . '/icons/menuitems/simplemenu.png'; ?>" class="HeaderListIcon"/>
-
-      <?php wp_head(); ?>
 
     </div>
+    <div class="PhoneList">
+      <ul class="HeaderListPhone">
+        <li class="HeaderListPhoneItem">HOME</li>
+        <li class="HeaderListPhoneItem">BLOG</li>
+        <li class="HeaderListPhoneItem">TUTORIALS</li>
+        <li class="HeaderListPhoneItem">PROJECTS</li>
+        <li class="HeaderListPhoneItem">ABOUT</li>
+      </ul>
+    </div>
 
-
+    <?php wp_head(); ?>
   </head>
 
 </html>
