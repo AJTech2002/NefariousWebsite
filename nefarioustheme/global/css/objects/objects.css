@@ -1,0 +1,66 @@
+/* NOTE: From Home CSS's */
+
+body, html {
+  width: 100%;
+  height: 100%;
+  word-wrap: normal;
+  font-family: raleway;
+  background-color: #F5F4F5;
+}
+
+
+/* Call to Action */
+.BlueCallToAction {
+  position: relative;
+  background-color: #44ADE2;
+  font-weight: 500;
+  font-size: 17px;
+  border-radius: 7px;
+  color: white;
+  width: 180px;
+  height: 35px;
+  float: right;
+  margin-top: 7px;
+  margin-right: 5px;
+}
+
+
+.GreenCallToAction {
+  position: absolute;
+  background-color: #69C676;
+  font-weight: 500;
+  font-size: 17px;
+  border-radius: 7px;
+  color: white;
+  width: 180px;
+  height: 40px;
+  bottom: 30px;
+  right: 40px;
+
+}
+
+.GreenCallToAction:hover {
+  background-color: #4F8E4D;
+}
+
+/* NOTE: These are all the pre-built containers */
+
+.ListContainer li {
+  display: block;
+  list-style: none;
+  list-style-type: none;
+}
+
+
+/* NOTE: These are all the pre-built progress bars */
+
+.ProgressBar {
+  position: relative;
+  background-color: #414042;
+  border-radius: 10px;
+}
+.Progress {
+  background-color: #8DC63F;
+  position: relative;
+  border-radius: 10px;
+}

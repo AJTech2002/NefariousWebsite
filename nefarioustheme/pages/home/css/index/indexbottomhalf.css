@@ -1,0 +1,173 @@
+
+/* NOTE: These are the biggest and main containers */
+
+#BottomContain {
+  position: relative;
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+  height: 600px;
+
+  /*background-color: #CECECE;*/
+
+}
+
+#PostListContainer {
+
+/* NOTE: Essentials */
+  width: 40%;
+  height: 400px;
+  margin-left: 20px;
+  margin-right: 10px;
+
+  position: relative;
+  /* REVIEW:  */
+right: 15px;
+}
+
+#CurrentProject {
+
+  /* NOTE: Essentials */
+  width: 60%;
+  height: 550px;
+
+  border: 5px #A7A9AC solid;
+  margin-bottom: 20px;
+  margin-top: 20px;
+
+
+}
+
+#ProjectGrid {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: repeat(4, 1fr);
+
+  background-color: blue;
+
+}
+
+#CurrentProject h2 {
+  width: 100%;
+  font-weight: 900;
+  color: #414042;
+  font-size: 25pt;
+  text-align: center;
+  background-color: red;
+
+  grid-column-start: 1;
+  grid-column-end: 6;
+  height: 40px;
+
+}
+
+#ProjectDescription {
+grid-column-start: 1;
+grid-column-end: 6;
+position: relative;
+top: -70px;
+margin: 10px;
+background-color: white;
+overflow: hidden;
+}
+
+#ProjectProgress {
+  right: -40px;
+  top: -80px;
+}
+
+
+
+/*
+ */
+
+#ProjectGrid .BlueCallToAction {
+
+  grid-column-start: 1;
+  grid-column-end: 6;
+  position: relative;
+  top: -70px;
+  right: -200px;
+
+}
+
+#PROGRESS {
+  position: relative;
+  top: -40px;
+  right: 450px;
+}
+
+#ProjectThumbnail {
+  width: 100%;
+  height: 200px;
+  background-color: gray;
+  grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 6;
+
+}
+
+
+/* NOTE: Left List Properties */
+#MainPostList .BlueCallToAction {
+  position: relative;
+  top: -22px;
+}
+
+#MainPostList li {
+  background-color: #E6E7E8;
+  border-width: 2px;
+  border-color: #A7A9AC;
+  border-style: solid;
+  margin-top: 5px;
+  margin-bottom: 5px;
+  height: 50px;
+}
+
+#MainPostList li h3 {
+  position: relative;
+  right: -20px;
+  top: 12px;
+  font-size: 20px;
+}
+
+/*
+
+<div id="PostListContainer" class="ListContainer">
+  <ul id="MainPostList">
+    <li> <h3> TITLE OF POST </h3> <button class="BlueCallToAction">READ MORE</button> </li>
+    <li> <h3> TITLE OF POST </h3> <button class="BlueCallToAction">READ MORE</button> </li>
+    <li> <h3> TITLE OF POST </h3> <button class="BlueCallToAction">READ MORE</button> </li>
+    <li> <h3> TITLE OF POST </h3> <button class="BlueCallToAction">READ MORE</button> </li>
+    <li> <h3> TITLE OF POST </h3> <button class="BlueCallToAction">READ MORE</button> </li>
+    <li> <h3> TITLE OF POST </h3> <button class="BlueCallToAction">READ MORE</button> </li>
+    <li> <h3> TITLE OF POST </h3> <button class="BlueCallToAction">READ MORE</button> </li>
+    <li> <h3> TITLE OF POST </h3> <button class="BlueCallToAction">READ MORE</button> </li>
+    <li> <h3> TITLE OF POST </h3> <button class="BlueCallToAction">READ MORE</button> </li>
+    <li> <h3> TITLE OF POST </h3> <button class="BlueCallToAction">READ MORE</button> </li>
+  </ul>
+</div>
+<div id="CurrentProject" class="BoxContainer">
+<!--   -->
+  <div id="ProjectGrid">
+    <div id="ProjectThumbnail"></div>
+    <h2> CURRENT PROJECT </h2>
+    <p id="ProjectDescription"> This is the project description of let's say NEFARIOUS. Just in a </br>
+      few words sum up the project and why they should click on this
+      link over there. Okay and for the blog its going to be develop
+      ment only. </p>
+
+    <button class="BlueCallToAction"> READ MORE </button>
+    <div class="ProgressBar" id="ProjectProgress">
+      <div class="Progress">
+      </div>
+    </div>
+    <p id="PROGRESS"> PROGRESS </p>
+
+  </div>
+</div>
+
+*/

@@ -1,4 +1,30 @@
-@media (max-width: 840px) {
+/* CSS TODO :
+ - Create a new CSS File for Buttons/Reusable Symbols
+ - Create a CSS file when exporting which combines most together
+ - Not into one file but 3-4 files
+*/
+
+@media (max-width: 800px) {
+  .HeaderListItem {
+    font-size: 2vw;
+  }
+
+  .HeaderName {
+    position: absolute;
+    top: -5px;
+  }
+
+  .HeaderListItem:hover {
+    background-color: white;
+    font-size: 2.5vw;
+    margin-top: 10px;
+    height: 100px;
+    color: rgb(51,51,51);
+  }
+
+}
+
+@media (max-width: 620px) {
 
   .HeaderList {
       float:  none;
@@ -18,6 +44,9 @@
   }
 
   .HeaderName {
+    position: absolute;
+    right: -5px;
+    width: 100%;
     text-align: center;
     float: none;
   }

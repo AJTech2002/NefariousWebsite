@@ -1,0 +1,98 @@
+/* CSS TODO :
+ - Create a new CSS File for Buttons/Reusable Symbols
+ - Create a CSS file when exporting which combines most together
+ - Not into one file but 3-4 files
+*/
+
+.Slideshow > * {
+  font-family : Raleway;
+  color: #f4f4f4;
+  position: relative;;
+  top: -10px;
+  width: 100%;
+  height: 350px;
+  background-color: rgb(51,51,51);
+}
+
+.SlidePostTitle {
+  position: absolute;
+  left: 360px;
+  top: 50px;
+}
+
+.SlidePostDescription {
+  position: absolute;
+  font-size:14px;
+  left: 360px;
+  top: 105px;
+}
+
+.ImageBox {
+  position: absolute;
+  background-color: white;
+  top: 20px;
+  left:30px;
+  width: 300px;
+  height: 300px;
+}
+
+.SlideFeatured {
+  position: absolute;
+  font-weight : bolder;
+  font-size : 21px;
+  left: 360px;
+  top: 28px;
+  color : #1BA9DF;
+}
+
+@media (min-width: 1300px) {
+    .Moveable {
+      position: relative;
+      left: 25%;
+    }
+
+    .GreenCallToAction {
+      position: sticky;
+      left: 55%;
+      top: 280px;
+    }
+}
+/* Responsive Controls */
+
+@media (max-width: 890px) {
+  .SlidePostTitle {
+    position: absolute;
+    font-size: 3vw;
+  }
+}
+
+@media (max-width: 700px) {
+
+
+}
+
+@media (max-width: 600px) {
+
+    .ImageBox {
+      display: none;
+    }
+
+    .SlidePostTitle {
+      position: absolute;
+      font-size: 7vw;
+      left: 30px;
+    }
+
+    .SlideFeatured {
+      position: absolute;
+      left: 30px;
+    }
+
+    .SlidePostDescription {
+      display: block;
+      position: absolute;
+      left: 30px;
+      top: 150px;
+    }
+
+}

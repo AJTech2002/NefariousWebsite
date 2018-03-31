@@ -1,0 +1,129 @@
+
+/* NOTE: Text Overflow Elipses will create ... on overflow */
+
+.TutorialsContainer {
+  position: relative;
+  height: 500px;
+  position: relative;
+  top: 50px;
+  margin-right: 20px;
+  margin-left: 20px;
+
+  /* Grid SETUP */
+
+  display: grid;
+  grid-column-gap: 50px;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: auto;
+  /*CENTERING*/
+
+
+}
+
+.TutCont {
+  background-color: #E6E6E6;
+  margin: 20px;
+
+  max-width: 400px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  box-shadow: 5px 5px #999999;
+  width: calc(100% - 40px);
+  height: calc(100% - 40px);
+}
+
+.TutImage {
+  float: left;
+  width: calc(100%);
+  height: calc(50%);
+}
+
+.Seperator {
+  margin: 20px;
+  height: 7px;
+  background-color: #A7A9AC;
+  position: relative;
+  top: 50px;
+}
+
+.TutorialName {
+  font-weight: normal;
+  text-align: center;
+  width: 100%;
+  position: relative;
+  text-overflow: ellipsis;
+  top: 12px;
+
+}
+
+.TutorialAuthor {
+  position: relative;
+  top: 30px;
+  width: 100%;
+  text-align: center;
+
+}
+
+.HomePageDifficulty {
+  position: relative;
+  top: 50px;
+  width: calc(100% - 40px);
+  height: 20px;
+  margin-left: 20px;
+}
+
+.HomePageDifficultyProgress {
+  height: 20px;
+
+}
+
+/* WARNING: YOU NEED TO MAKE SURE CALC IS SUPPORTED
+BY ALL THE TYPES OF BROWSERS */
+/*  width: -moz-calc(100% - 40px);
+  width: -webkit-calc(100% - 40px);
+  width: -o-calc(100% - 40px);
+   */
+
+/* NOTE : WARNING : OKAY SO CENTERING HAS TO BE DONE IN THE CONTAINER USING
+FLEX BOX!!! */
+
+#TUTORIAL1 {
+  position: relative;
+  grid-column: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+#TUTORIAL2 {
+  position: relative;
+  grid-column: 2;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+#TUTORIAL3 {
+  position: relative;
+  grid-column: 3;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+
+}
+
+#FeaturedTutorials {
+  position: relative;
+  top: 45px;
+  margin-left: 40px;
+  font-size: 30px;
+  color: #414042;
+}

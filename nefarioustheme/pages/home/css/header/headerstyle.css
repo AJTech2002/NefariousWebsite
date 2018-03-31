@@ -1,3 +1,9 @@
+/* CSS TODO :
+ - Create a new CSS File for Buttons/Reusable Symbols
+ - Create a CSS file when exporting which combines most together
+ - Not into one file but 3-4 files
+*/
+
 * {
   margin: 0;
   padding: 0;
@@ -16,7 +22,10 @@
 
 .HeaderListItem:hover {
   background-color: white;
-  color: black;
+  font-size: 23px;
+  margin-top: 10px;
+  height: 100px;
+  color: rgb(51,51,51);
 }
 
 
@@ -48,13 +57,13 @@
   padding-top: 0px;
   margin-top: 0px;
   display: none;
-    content: none;
-    text-align: center;
-    font-family : Raleway;
-    font-weight: lighter;
-    font-size : 20px;
-    color : #D1D3D4;
-    color : rgb(209, 211, 212);
+  content: none;
+  text-align: center;
+  font-family : Raleway;
+  font-weight: lighter;
+  font-size : 20px;
+  color : #D1D3D4;
+  color : rgb(209, 211, 212);
 }
 
 .HeaderListItem {
@@ -77,5 +86,5 @@
   opacity: 1;
   padding-top: 23px;
   float: right;
-  padding-right: 30px;
+/*  padding-right: 30px;  */
 }

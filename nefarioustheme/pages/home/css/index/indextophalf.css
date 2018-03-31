@@ -1,0 +1,217 @@
+/* CSS TODO :
+ - Create a new CSS File for Buttons/Reusable Symbols
+ - Create a CSS file when exporting which combines most together
+ - Not into one file but 3-4 files
+*/
+.Subscribe {
+  width: 300px;
+  height: 100px;
+  background-image: url('items/SVGFormat/subscribe.svg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  margin-left: -8px;
+}
+
+#SeeMore {
+  position: relative;
+  float: right;
+  top: 25px;
+}
+
+a {
+  text-decoration: none;
+  color: #f4f4f4;
+}
+
+/* NOTE: Above Post Grid */
+
+.HomePostGrid > * {
+  text-transform: uppercase;
+}
+
+.HomePostGrid {
+  font-style: raleway;
+  position: relative;
+  top: -10px;
+
+
+  display: grid;
+  grid-template-columns: 3fr 3fr;
+  grid-template-rows: auto;
+  height: 300px;
+
+
+}
+
+#SeeMore {
+  margin-right: 20px;
+}
+
+.BigPostDisplay .BottomBar {
+  position: relative;
+  height: 60px;
+  background-color: #606161;
+  top: 80%;
+  width: 100%;
+}
+
+.ImageCover {
+  position: relative;
+  background-color: rgba(224, 224, 224, 0);
+  width: 100%;
+}
+
+.BigPostDisplay b {
+  opacity: 0;
+  position: relative;
+  top: -40px;
+  margin-left: 20px;
+
+}
+
+.BigPostDisplay p {
+  opacity: 0;
+  font-size: 14px;
+  margin-left: 20px;
+  position: relative;
+  top: -30px;
+}
+
+/* NOTE: Bottom Bar Properties */
+
+.BottomBar h3 {
+  margin: 12px;
+  float: left;
+}
+
+#SeeMore {
+  display: block;
+}
+
+.BottomBar button {
+  position: absolute;
+  display: block;
+  opacity: 1;
+  float: right;
+  top: 5px;
+  right: 20px;
+}
+
+/* NOTE: Media Queries for the posts */
+
+@media (max-width: 1080px) {
+
+  .BottomBar button {
+    top: -50px;
+    right : 10px;
+    display: block;
+    opacity: 1;
+  }
+
+  .BigPostDisplay p {
+    margin-right: 10px;
+  }
+
+  #SeeMore {
+    display: block;
+  }
+
+}
+
+
+.BigPostDisplay {
+  height: 300px;
+  background-color: #1A1A1A;
+  font-size: 24px;
+  color: #f4f4f4;
+  margin: 20px;
+  min-width: 100px;
+}
+
+@media (min-width: 1950px) {
+    .BigPostDisplay {
+      max-width: 900px;
+      min-width: 900px;
+    }
+    #O1 {
+      margin-left: auto;
+    }
+
+    #O2 {
+      margin-right: auto;
+    }
+
+    #SeeMore {
+      display: block;
+    }
+
+}
+
+
+/* NOTE: This is each individual block post */
+
+#O1 {
+  display: grid;
+  grid-column: 1;
+}
+
+#O2 {
+  display: grid;
+  grid-column: 2;
+}
+
+/* NOTE: Change the order of the posts if the window is too short */
+
+@media (max-width: 670px) {
+
+  .HomePostGrid {
+    height: 600px;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #O1 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+  }
+
+  #O2 {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 2;
+  }
+
+  #SeeMore {
+    display: none;
+  }
+
+  .BottomBar button {
+    top: 5px;
+    opacity: 1;
+    display: block;
+  }
+
+  #PostDisplay .Subscribe {
+    position: relative;
+    top: 40px;
+    right: 10px;
+  }
+
+}
+
+@media (max-width: 550px) {
+  .BottomBar button {
+    top: -50px;
+    right : 10px;
+    opacity: 1;
+  }
+}
+
+/* NOTE: Under Home Post */
+#UnderHomePost {
+  margin: 20px;
+}
+
+#UnderSub {
+  float: left;
+}

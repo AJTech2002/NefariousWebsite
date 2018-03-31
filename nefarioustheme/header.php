@@ -12,17 +12,9 @@
 
       <h1 class="HeaderName">CODE WITH AJAY</h1>
       <ul id="NavOptions" class="HeaderList">
-        <li class="HeaderListItem">HOME</li>
-        <li class="HeaderListItem">BLOG</li>
-        <li class="HeaderListItem">TUTORIALS</li>
-        <li class="HeaderListItem">PROJECTS</li>
-        <li class="HeaderListItem">ABOUT</li>
-
+        <li class="HeaderListItem">HOME</li><li class="HeaderListItem">BLOG</li><li class="HeaderListItem">TUTORIALS</li><li class="HeaderListItem">PROJECTS</li><li class="HeaderListItem">ABOUT</li>
       </ul>
-
-
-    </div>
-    <div class="PhoneList">
+    </div> <div class="PhoneList">
       <ul class="HeaderListPhone">
         <li class="HeaderListPhoneItem">HOME</li>
         <li class="HeaderListPhoneItem">BLOG</li>
