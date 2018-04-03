@@ -1,4 +1,4 @@
-<html>
+<html id="TutorialHTML">
 
   <div class="Seperator"></div>
 
@@ -12,6 +12,8 @@
           <h3 class="TutorialName">THE COMPLETE MACHINE LEARNING COURSE</h3>
           <h4 class="TutorialAuthor">BY AJAY VENKAT</h4>
           <div class="ProgressBar HomePageDifficulty"> <div class="Progress HomePageDifficultyProgress" style="width: 50%"> </div> </div>
+          <button class="BlueCallToAction TutorialButton">GO TO COURSE</button>
+          <p> DIFFICULTY </p>
         </div>
       </div>
 
@@ -21,6 +23,8 @@
           <h3 class="TutorialName">THE COMPLETE MACHINE LEARNING COURSE</h3>
           <h4 class="TutorialAuthor">BY AJAY VENKAT</h4>
           <div class="ProgressBar HomePageDifficulty"> <div class="Progress HomePageDifficultyProgress" style="width: 15%"> </div> </div>
+          <button class="BlueCallToAction TutorialButton">GO TO COURSE</button>
+          <p> DIFFICULTY </p>
         </div>
       </div>
 
@@ -30,6 +34,8 @@
           <h3 class="TutorialName">THE COMPLETE MACHINE LEARNING COURSE</h3>
           <h4 class="TutorialAuthor">BY AJAY VENKAT</h4>
           <div class="ProgressBar HomePageDifficulty"> <div class="Progress HomePageDifficultyProgress" style="width: 75%"> </div> </div>
+          <button class="BlueCallToAction TutorialButton">GO TO COURSE</button>
+          <p> DIFFICULTY </p>
         </div>
       </div>
 

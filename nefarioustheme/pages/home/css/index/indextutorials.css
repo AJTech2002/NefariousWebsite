@@ -1,11 +1,12 @@
 
 /* NOTE: Text Overflow Elipses will create ... on overflow */
 
+
 .TutorialsContainer {
   position: relative;
   height: 500px;
+  top: -50px;
   position: relative;
-  top: 50px;
   margin-right: 20px;
   margin-left: 20px;
 
@@ -20,6 +21,23 @@
 
 }
 
+#FeaturedTutorials {
+  position: relative;
+  top: -50px;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #414042;
+}
+
+.Seperator {
+  top: -50px;
+  margin: 20px;
+  height: 4px;
+  background-color: #A7A9AC;
+  position: relative;
+}
+
 .TutCont {
   background-color: #E6E6E6;
   margin: 20px;
@@ -32,27 +50,37 @@
   height: calc(100% - 40px);
 }
 
+.TutorialButton {
+  position: relative;
+  top: 90px;
+  right: 20px;
+}
+
+@media (max-width: 1200px) {
+  .TutorialButton {
+    position: relative;
+    top: -315px;
+    right: 5px;
+    height: 50px;
+  }
+}
+
 .TutImage {
   float: left;
   width: calc(100%);
   height: calc(50%);
 }
 
-.Seperator {
-  margin: 20px;
-  height: 7px;
-  background-color: #A7A9AC;
-  position: relative;
-  top: 50px;
-}
 
 .TutorialName {
   font-weight: normal;
   text-align: center;
-  width: 100%;
+  width: calc(100% - 20px);
   position: relative;
   text-overflow: ellipsis;
   top: 12px;
+  margin-right: 10px;
+  margin-left: 10px;
 
 }
 
@@ -61,6 +89,13 @@
   top: 30px;
   width: 100%;
   text-align: center;
+
+}
+
+.TutCont p {
+  position: relative;
+  top: 60px;
+  margin-left: 20px;
 
 }
 
@@ -120,10 +155,47 @@ FLEX BOX!!! */
 
 }
 
-#FeaturedTutorials {
-  position: relative;
-  top: 45px;
-  margin-left: 40px;
-  font-size: 30px;
-  color: #414042;
+
+
+
+/* Media Queries for Responsive Grid */
+
+@media (max-width: 900px) {
+  .TutorialsContainer {
+    height: 1000px;
+    grid-template-columns: 2fr 2fr;
+    grid-template-rows: 1fr 1fr;
+  }
+
+  #TUTORIAL3 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row: 1;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .TutorialsContainer {
+    height: 1500px;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+  }
+
+  #TUTORIAL3 {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  #TUTORIAL2 {
+    grid-column: 1;
+    grid-row: 2;
+  }
+
+
+  #TUTORIAL2 {
+    grid-column: 1;
+    grid-row: 3;
+  }
+
 }

@@ -12,6 +12,16 @@
   margin-left: -8px;
 }
 
+
+#LatestPosts {
+  color: #414042;
+  position: relative;
+  top: -30px;
+  width: 100%;
+  text-align: center;
+  font-size: 33px;
+}
+
 #SeeMore {
   position: relative;
   float: right;
@@ -32,7 +42,7 @@ a {
 .HomePostGrid {
   font-style: raleway;
   position: relative;
-  top: -10px;
+  top: -20px;
 
 
   display: grid;
@@ -117,6 +127,7 @@ a {
   }
 
 }
+
 
 
 .BigPostDisplay {
@@ -205,6 +216,12 @@ a {
     right : 10px;
     opacity: 1;
   }
+
+  .BottomBar h3 {
+    font-size: 7vw;
+    text-overflow: ellipsis;
+  }
+
 }
 
 /* NOTE: Under Home Post */
@@ -214,4 +231,110 @@ a {
 
 #UnderSub {
   float: left;
+}
+
+
+/* NOTE: This is for the icons underneath the slideshow */
+#CallToActionSection {
+  position: relative;
+  top: -30px;
+  width: 100%;
+  height: 300px;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 80% 20%;
+}
+
+.TopImageName {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  top: -20px;
+  font-size: 15pt;
+  text-align: center;
+  color: #414042;
+  grid-row: 2;
+}
+
+.TopImage {
+  width: 150px;
+  height: 150px;
+  background-size: contain;
+  margin: 20px;
+}
+
+.CASection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#OA1 {
+  grid-column: 1;
+  grid-row: 1;
+
+}
+
+#OA2 {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+#OA3 {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+/* NOTE: Media Queries */
+
+@media (max-width: 600px) {
+  .TopImage {
+    width: 100px;
+    height: 100px;
+    position: relative;
+    right: 15px;
+  }
+
+  #CallToActionSection {
+    position: relative;
+    top: -70px;
+  }
+
+  .TopImageName {
+    font-size: 4vw;
+    position: relative;
+    top: -50px;
+    right: 10px;
+  }
+
+
+
+
+}
+
+
+@media (max-width: 400px) {
+  .TopImage {
+    width: 80px;
+    height: 80px;
+  }
+
+  #CallToActionSection {
+    position: relative;
+    top: -70px;
+  }
+
+  .TopImageName {
+    font-size: 4vw;
+    position: relative;
+    top: -60px;
+    right: 20px;
+  }
+
+
+/* Remove the gap */
+  .HomePostGrid {
+    position: relative;
+  }
+
 }

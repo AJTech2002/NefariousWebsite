@@ -11,6 +11,12 @@
     <div class="Header">
 
       <h1 class="HeaderName">CODE WITH AJAY</h1>
+      
+      <?php echo '<img class="HeaderIcon" src="' . get_bloginfo('template_directory') . '/global/icons/social/facebook.svg" />';  ?>
+      <?php echo '<img class="HeaderIcon" src="' . get_bloginfo('template_directory') . '/global/icons/social/instagram.svg" />';  ?>
+      <?php echo '<img class="HeaderIcon" src="' . get_bloginfo('template_directory') . '/global/icons/social/twitter.svg" />';  ?>
+
+
       <ul id="NavOptions" class="HeaderList">
         <li class="HeaderListItem">HOME</li><li class="HeaderListItem">BLOG</li><li class="HeaderListItem">TUTORIALS</li><li class="HeaderListItem">PROJECTS</li><li class="HeaderListItem">ABOUT</li>
       </ul>

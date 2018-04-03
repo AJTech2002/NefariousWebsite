@@ -1,4 +1,5 @@
 <html id="PostDisplay">
+  <h3 id="LatestPosts">LATEST POSTS</h3>
   <div class="HomePostGrid">
 
     <div class="BigPostDisplay" id="O1">

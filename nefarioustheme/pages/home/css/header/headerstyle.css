@@ -28,6 +28,12 @@
   color: rgb(51,51,51);
 }
 
+#Indicator {
+  position: relative;
+  font-size: 20px;
+  top: 5px;
+  left: -350px;
+}
 
 .HeaderName {
   font-family : Raleway;

@@ -32,6 +32,8 @@
       opacity: 0;
   }
 
+
+
   #NavOptions li + li:before {
       content: "";
       padding: 0 0px;
