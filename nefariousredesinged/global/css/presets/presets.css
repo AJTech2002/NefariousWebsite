@@ -1,0 +1,129 @@
+/* HTML PRESET */
+* {
+  transition-duration: 0.3s;
+  overflow-x: hidden;
+}
+
+* {
+  overflow: hidden;
+}
+
+body {
+  overflow-y: scroll;
+}
+
+html, body {
+  margin: 0px;
+  padding: 0px;
+  width: 100%;
+  height: 100%;
+  font-family: Raleway;
+}
+
+
+/* COLOUR PRESETS (BASED ON THEMES) */
+
+.LightBlue {
+  background-color: #27AAE1;
+}
+
+.LightWhiteBlue {
+  background-color: #28C2F2;
+}
+
+.Blue {
+  background : #00AEEF;
+}
+
+.Red {
+background-color: #EF445A;
+}
+
+.LightGreen {
+background-color: #8DC63F;
+}
+
+.TextGrey {
+background-color: #414042;
+}
+
+.TextWhite {
+  background-color: #F1F2F2;
+}
+
+.TextGrey {
+background-color: #414042;
+}
+
+.TextWhite {
+  background-color: #F1F2F2;
+}
+
+
+.BackgroundColour {
+background-color: #E6E7E8;
+}
+
+.LightContainer {
+background-color: #D1D3D4;
+}
+
+.DarkContainer {
+background-color: #CACBCB;
+}
+
+.PowerRed {
+background-color: #EF3D3C;
+}
+
+.White {
+background-color: #F1F2F2;
+}
+
+.PresetYellow {
+background-color: #EAAB39;
+}
+
+.SeperatorColor {
+  background-color: #ABABAB;
+}
+
+.InputBoxGray {
+  background-color: #BCBEC0;
+}
+
+.PresetGreen {
+background-color: #5BBB5D;
+}
+
+.LightWhite {
+background-color: #E6E7E8;
+}
+
+.Brown {
+background-color: #594A42;
+}
+
+
+/* TEXT ASSETS  */
+
+h3 {
+  font-size: 30px;
+  font-family: Lato;
+  color: #414042;
+  font-weight: normal;
+}
+
+h4 {
+  font-size: 25px;
+  font-family: Lato;
+  color: #414042;
+  font-weight: normal;
+}
+
+h5 {
+  font-family: Raleway;
+  font-weight: 900;
+  font-size: 25px;
+  color: #414042;
+}

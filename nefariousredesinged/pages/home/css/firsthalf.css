@@ -1,0 +1,381 @@
+/* The full body grid css is here */
+
+
+.FullBody {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 450px 700px 200px 700px 1000px 700px;
+  height: 10000px;
+  background-color: #E6E7E8;
+  overflow-y: hidden;
+}
+
+.LeftHalf {
+  overflow-y: visible;
+  overflow-x: hidden;
+  grid-column: 1;
+  background-color: #E6E7E8;
+  display: grid;
+  grid-template-rows: 380px 1000px 200px 700px 1000px 700px;
+
+
+}
+
+/* LEFT 01 STYLE  */
+
+#Left01 {
+  grid-column: 1;
+  align-items: center;
+}
+
+#Left01 > .Slideshow {
+  width: 90%;
+  height: 90%;
+  background-color: #D1D3D4;
+  margin: auto;
+  margin-top: 15px;
+}
+
+.Slideshow {
+    overflow: hidden;
+}
+
+.Slideshow > h3 {
+  font-family: Lato;
+  color: #414042;
+  font-weight: normal;
+}
+
+.Slideshow > p {
+  width: 80%;
+  height: 250px;
+  margin-left: 20px;
+
+}
+
+/* LEFT 02 STYLE */
+
+#Left02 {
+  grid-column: 1;
+  overflow: hidden;
+}
+
+#Left02 > .GreenCallToAction {
+  position: relative;
+  float: right;
+  top: -53px;
+  margin-right: 20px;
+  width: 150px;
+  height: 30px;
+  text-align: center;
+}
+
+#Left02 > .GreenCallToAction > p {
+  position: relative;
+  top: -10px;
+}
+
+h2 {
+  font-family: Lato;
+  color: #414042;
+  font-weight:normal;
+  font-size: 20pt;
+  margin-left: 20px;
+}
+
+#TutorialTable {
+  height: 880px;
+  width: 90%;
+  margin: auto;
+  position: relative;
+  top: -20px;
+
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 30px;
+
+}
+
+/* This will dissapear at a media query soon */
+
+#OA {
+  display: grid;
+  grid-template-rows: 40px 1fr 1fr 1fr;
+  grid-row-gap: 30px;
+}
+
+@media (max-width: 990px) {
+  #OA {
+    display: none;
+  }
+  #OB {
+    grid-column-start: 1;
+    grid-column-end: 3;
+  }
+}
+
+#OB {
+  display: grid;
+  grid-template-rows: 40px 1fr 1fr 1fr;
+  grid-row-gap: 30px;
+}
+
+.TutorialHead {
+  overflow: hidden;
+  font-family: Raleway;
+  color: #F1F2F2;
+  font-weight: bolder;
+  font-size: 1.5vw;
+  text-align: center;
+  background-color: #00AEEF;
+  border-radius: 5px;
+  line-height: 40px;
+  margin-right: 8px;
+  margin-left: 8px;
+}
+
+.HoverContainer {
+  background-color: white;
+  opacity: 0;
+  height: 0%;
+
+}
+
+.HoverContainer > p {
+  margin: auto;
+  width: 90%;
+  position: relative;
+  top: 10px;
+}
+
+.HoverContainer > .ProgressBarContainer {
+  width: 90%;
+  margin: auto;
+  position: relative;
+  bottom: -80px;
+  height: 25px;
+}
+
+.HoverContainer > .ProgressBarContainer > .ProgressBar {
+  height: 25px;
+  text-align: center;
+  padding-top: 3px;
+}
+
+.HoverContainer > * {
+   opacity: 1;
+}
+
+.TutorialPost:hover .HoverContainer {
+  height: 100%;
+  opacity: 0.9;
+}
+
+
+
+.TutorialPost {
+  position: relative;
+}
+
+.TitleBox {
+  position: absolute;
+  bottom: 0px;
+  background-color: #414042;
+  height: 40px;
+  width: 100%;
+}
+
+.TitleBox > h2 {
+
+  line-height: 40px;
+  font-size: 15px;
+  margin: auto;
+  margin-left: 20px;
+  color: white;
+}
+
+
+/* SUBCRIBE BOX CSS */
+
+#Left03 {
+  grid-column: 1;
+}
+
+#Left04 {
+  grid-column: 1;
+}
+
+
+#Left05 {
+  grid-column: 1;
+}
+
+#Left06 {
+  grid-column-start: 1;
+}
+
+#Left07 {
+  grid-column: 1;
+}
+
+#Left08 {
+  grid-column: 1;
+}
+
+#SubscribeBox {
+  background-color: #D1D3D4;
+  border-radius: 5px;
+}
+
+#SubscribeBanner {
+  color: #F1F2F2;
+  font-family: Lato;
+  font-weight: bold;
+  font-size: 20px;
+  width: 100%;
+  height: 45px;
+  background-color: #594A42;
+  position: relative;
+  top: 20px;
+
+  text-align: center;
+}
+
+#SubscribeBanner > h3 {
+  font-family: Raleway;
+  color: #F1F2F2;
+  position: relative;
+  top: -25px;
+}
+
+#SubscribeBox {
+  position: relative;
+}
+
+#SubscribeBox > .InputBoxContainer {
+  position: absolute;
+
+  top: 90px;
+
+  width: 75%;
+  height: 40px;
+
+  left: 12%;
+
+
+}
+
+/* POPULAR TUTORIALS SECTION  */
+
+#Right01 {
+  grid-column: 2; grid-row: 1;
+
+}
+
+.ChildCenterContainer {
+  position: relative;
+  width: 95%;
+  height: 90%;
+  top:10px;
+}
+
+#Right01 > .CenterContainer {
+  width: 90%;
+  height: 90%;
+  top:-2%;
+  display: grid;
+  grid-template-columns: 2;
+  grid-column-gap: 20px;
+}
+
+#Right01 > .CenterContainer > .TutorialPost {
+  width: 100%;
+
+  height: 75%;
+}
+
+#Second {
+  grid-column: 2;
+}
+
+/* BIG PROJECT COLUMN (RIGHT) */
+
+#Right02 {
+  position: relative;
+  top: -50px;
+  grid-column: 2;
+  grid-row-start: 2;
+  grid-row-end: 5;
+}
+
+#Right02 > .CenterContainer {
+  width: 90%;
+  height: 90%;
+  top:-2%;
+  display: grid;
+  grid-template-rows: 110px 400px 250px 620px 70px;
+
+}
+
+ #ProjectHeader > .CenterContainer {
+   position: relative;
+   width: 95%;
+   height: 50%;
+   top:50px;
+   background-color: #EF3D3C;;
+   text-align:center;
+   line-height: 50px;
+   font-weight: bolder;
+   color: #F2F2F2;
+   font-size: 27px;
+
+}
+
+#Right02 > .CenterContainer > div > h4 {
+  font-family: Raleway;
+  font-weight: 900;
+  font-size: 35px;
+  width: 100%;
+  text-align: center;
+  position: relative;
+  top: -50px;
+}
+
+#Right02 > .CenterContainer > div > p {
+  font-family: Raleway;
+  font-weight: normal;
+  font-size: 16px;
+  width: calc(100% - 20px);
+  text-align: center;
+  position: relative;
+  top: -80px;
+}
+
+#Right02 > .CenterContainer > div > .LightGreenCallToAction {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 16px;
+  height: 30px;
+  width: 170px;
+  text-align: center;
+  line-height: 30px;
+  color: #F2F2F2;
+  position: relative;
+  top: -80px;
+  margin: auto;
+}
+
+.SimpleLog > h5 {
+  position: relative;
+  top: -30px;
+}
+
+.SimpleLog > p {
+  font-family: Raleway;
+  font-weight: normal;
+  margin-left: 40px;
+  font-size: 16px;
+  width: calc(100% - 80px);
+  position: relative;
+  top: -60px;
+}

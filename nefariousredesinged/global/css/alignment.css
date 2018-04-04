@@ -1,0 +1,49 @@
+.TopLeftAlign {
+  grid-column: 1;
+  grid-row: 1;
+  align-self: center;
+  margin: auto;
+}
+
+/*Top May need to be changed*/
+.CenterAlignText {
+  position: relative;
+  top: 15%;
+  margin-left: calc(10% - 5px);
+  margin-right: calc(10% - 5px);
+
+}
+
+.TopRightAlign {
+  grid-column: 3;
+  grid-row: 1;
+  align-self: center;
+  margin: auto;
+}
+
+.BottomLeftAlign {
+  grid-column: 1;
+  grid-row: 3;
+  margin: auto;
+  align-self: center;
+}
+
+.BottomRightAlign {
+  grid-column:3;
+  grid-row: 3;
+  margin: auto;
+  align-self: center;
+}
+
+.CenterAlign {
+  grid-column: 2;
+  grid-row: 2;
+  margin: auto;
+  align-self: center;
+}
+
+.AlignContainer {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr;
+}

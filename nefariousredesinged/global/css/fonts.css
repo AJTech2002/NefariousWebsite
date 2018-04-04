@@ -1,0 +1,115 @@
+@font-face {
+  font-family: 'LemonMilk'; /*a name to be used later*/
+  src: url('customfonts/LemonMilk.otf'); /*URL to font*/
+}
+
+.InputFont {
+  font-family : Lato;
+  font-size : 9px;
+  color : #58595B;
+  color : rgb(88, 89, 91);
+}
+
+.PostTitleFont {
+  font-family : Raleway;
+  font-size : 12px;
+  color : #414042;
+  color : rgb(65, 64, 66);
+}
+
+.PostDescriptionFont {
+  font-family : Lato;
+  font-size : 6px;
+  color : #231F20;
+  color : rgb(35, 31, 32);
+}
+
+.SubAuthorDateFont {
+  font-family : Lato;
+  font-size : 6px;
+  color : #414042;
+  color : rgb(65, 64, 66);
+}
+
+
+.CallToActionFont {
+  font-family : Raleway;
+  font-weight : bold;
+  font-size : 11px;
+  color : #FFFFFF;
+  color : rgb(255, 255, 255);
+}
+
+.SubHeaderFont {
+   font-family : Lato;
+  font-weight : bold;
+  font-size : 14px;
+  color : #F1F2F2;
+  color : rgb(241, 242, 242);
+}
+
+.TitleFont {
+   font-family : Raleway;
+  font-size : 10px;
+  color : #F1F2F2;
+  color : rgb(241, 242, 242);
+}
+
+.SlideshowTitleFont {
+    font-family : Lato;
+  font-weight : bold;
+  font-size : 14px;
+  color : #414042;
+  color : rgb(65, 64, 66);
+}
+
+.SlideshowDescriptionFont {
+    font-family : Lato;
+  font-weight : bold;
+  font-size : 8px;
+  color : #414042;
+  color : rgb(65, 64, 66);
+}
+
+.HeaderItemFont {
+    font-family : Lemon/Milk;
+  font-size : 7px;
+  color : #F1F2F2;
+  color : rgb(241, 242, 242);
+}
+
+
+.SubHeaderFont {
+  font-family : Lato;
+  font-size : 17px;
+  color : #414042;
+  color : rgb(65, 64, 66);
+}
+
+.BoldWhite {
+   font-family : Raleway;
+  font-size : 10px;
+  color : #F1F2F2;
+  color : rgb(241, 242, 242);
+}
+
+.DarkBoldBig {
+  font-family : Raleway;
+  font-size : 17px;
+  color : #414042;
+  color : rgb(65, 64, 66);
+}
+
+.SectionHeadingBig {
+   font-family : Raleway;
+  font-size : 16px;
+  color : #F2F2F2;
+  color : rgb(242, 242, 242);
+}
+
+.QuoteText {
+  font-family : Raleway;
+  font-size : 14px;
+  color : #414042;
+  color : rgb(65, 64, 66);
+}
