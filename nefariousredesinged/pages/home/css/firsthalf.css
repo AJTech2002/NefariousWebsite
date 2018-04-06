@@ -1,13 +1,20 @@
-/* The full body grid css is here */
+/* SLIDESHOW CSSS HERE */
 
+.TopSlideshow {
+  width: 100%;
+  height: 500px;
+  background-color: #D1D3D4;
+}
+
+
+/* The full body grid css is here */
 
 .FullBody {
   display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 450px 700px 200px 700px 1000px 700px;
+  grid-template-columns: 1fr 0.65fr;
+  grid-template-rows: 450px 450px 700px 400px 1200px 400px 100px 700px;
   height: 10000px;
-  background-color: #E6E7E8;
-  overflow-y: hidden;
+  background-color: #f2f2f2;
 }
 
 .LeftHalf {
@@ -198,10 +205,13 @@ h2 {
 /* SUBCRIBE BOX CSS */
 
 #Left03 {
-  grid-column: 1;
+  grid-column: 2;
+  grid-row: 6;
+
 }
 
 #Left04 {
+  grid-row: 5;
   grid-column: 1;
 }
 
@@ -209,6 +219,7 @@ h2 {
 #Left05 {
   grid-column: 1;
 }
+
 
 #Left06 {
   grid-column-start: 1;
@@ -268,7 +279,9 @@ h2 {
 /* POPULAR TUTORIALS SECTION  */
 
 #Right01 {
-  grid-column: 2; grid-row: 1;
+  grid-column-start: 1;
+  grid-column-end: 3;
+   grid-row: 1;
 
 }
 
@@ -284,7 +297,7 @@ h2 {
   height: 90%;
   top:-2%;
   display: grid;
-  grid-template-columns: 2;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 20px;
 }
 
@@ -302,19 +315,23 @@ h2 {
 
 #Right02 {
   position: relative;
-  top: -50px;
+  width: 90%;
   grid-column: 2;
   grid-row-start: 2;
-  grid-row-end: 5;
+  grid-row-end: 4;
+}
+
+#Right02 > * {
+  background-color: #e2e2e2;
 }
 
 #Right02 > .CenterContainer {
   width: 90%;
-  height: 90%;
-  top:-2%;
+  height: 99%;
+  top:0.5%;
   display: grid;
-  grid-template-rows: 110px 400px 250px 620px 70px;
-
+  grid-template-rows: 110px 400px 250px 900px 70px;
+  background-color: #e2e2e2;
 }
 
  #ProjectHeader > .CenterContainer {
@@ -322,7 +339,7 @@ h2 {
    width: 95%;
    height: 50%;
    top:50px;
-   background-color: #EF3D3C;;
+   background-color: #00AEEF;
    text-align:center;
    line-height: 50px;
    font-weight: bolder;
@@ -361,8 +378,11 @@ h2 {
   line-height: 30px;
   color: #F2F2F2;
   position: relative;
-  top: -80px;
-  margin: auto;
+
+}
+
+.SimpleLog:hover {
+  background-color: #BCBEC0;
 }
 
 .SimpleLog > h5 {
@@ -370,12 +390,178 @@ h2 {
   top: -30px;
 }
 
+.SimpleLog {
+  text-overflow: ellipsis;
+  background-color: #e2e2e2;
+}
+
 .SimpleLog > p {
+
   font-family: Raleway;
   font-weight: normal;
   margin-left: 40px;
   font-size: 16px;
   width: calc(100% - 80px);
+  text-overflow: clip;
   position: relative;
   top: -60px;
+
+
+  text-overflow: ellipsis;
+   display: block;
+
+}
+
+/* THIS IS THE LATEST POST DIV STYLE SHEET */
+
+.LatestPost > .PostThumbnail {
+  margin-left: 40px;
+  position: relative;
+  top: 5px;
+}
+
+
+.LatestPost > p {
+  position: relative;
+  top: -150px;
+  right: -160px;
+  width: 70%;
+  height: 100px;
+}
+
+
+.LatestPost {
+  height: 150px;
+}
+
+
+.LatestPost > .Seperator {
+  position: relative;
+  top: -170px;
+}
+
+.LatestPost > h4 {
+  font-family: Raleway;
+  font-weight: bolder;
+  font-size: 25px;
+  position: relative;
+  right: -160px;
+  top: -120px;
+}
+
+/* ABOUT ME THE STYLE SHEET MOST IMPORTANT TO ME  */
+
+#Left05 > .CenterContainer {
+  width: 95%;
+  height: 95%;
+}
+
+#AboutMeImage {
+  position: relative;
+  overflow: visible;
+  width: 280px;
+  height: 280px;
+  background-color: #BCBEC0;
+}
+
+#AboutName {
+
+}
+
+.AboutSub {
+  position: relative;
+  right: -300px;
+}
+
+#Left05 > .CenterContainer > p {
+  position: absolute;
+
+}
+
+.CenterContainer > .LightGreenCallToAction {
+  font-family: Raleway;
+  font-weight: bold;
+  font-size: 16px;
+  height: 30px;
+  width: 170px;
+  text-align: center;
+  line-height: 30px;
+  color: #F2F2F2;
+  position: relative;
+  top: 5px;
+  float: right;
+  margin-right: 20px;
+
+}
+
+
+/* QUOTE BLOCK (SECOND MOST AWESOME BLOCK) */
+#LeftQuoteBlock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+}
+#LeftQuoteBlock > b {
+  color: #414042; font-size: 30px;
+}
+
+#LeftQuoteBlock:hover > b {
+  font-size: 40px;
+}
+
+
+/* UPCOMING TUTORIALS AND GET PEOPLE EXCITED  */
+
+#Right03 {
+  height: 100%;
+  position: relative;
+  top: -20px;
+  grid-column: 2;
+  grid-row-start: 5;
+  grid-row-end: 7;
+}
+
+#Right03 > .CenterContainer {
+  width: 90%;
+  height: 90%;
+  top:-2%;
+  display: grid;
+  grid-template-columns: 2;
+  grid-column-gap: 20px;
+}
+
+#Right03 > .CenterContainer > .TutorialPost {
+  width: 100%;
+
+  height: 75%;
+}
+
+.TutorialPost:hover > h3 {
+  display: none;
+  opacity: 0;
+}
+
+.TutorialPost > h3 {
+  position: absolute;
+}
+
+
+/* CATEGORY MANAGEMENET OVERHERE */
+
+#CategoryManagement {
+  grid-column-start: 1;
+  grid-column-end: 3;
+
+}
+
+#CategoryManagement > .CenterContainer {
+  background-color: red;
+  width: 95%;
+  height: 95%;
+  top: 2.5%;
+
+  display: grid;
+  grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 0.2fr;
+
 }

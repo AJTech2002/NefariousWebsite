@@ -1,14 +1,20 @@
 /* Includes the main Header Code + Header Name */
 
 .Header {
-
+  z-index: 5;
   background-color: #27AAE1;
-  width: 100%;
+  width: calc(100% - 15px);
   height : 45px;
   overflow: hidden;
-  z-index: -1;
   /* GRID */
   display: inline-flex;
+
+  position: absolute;
+   top: 0;
+   bottom: 0;
+   left: 0;
+   right: 0;
+
 }
 
 .Header > *  {
@@ -290,7 +296,7 @@
 
   .Header {
     height: 60px;
-    width: 100%;
+    width: calc(100% - 15px);
     display: inline-block;
   }
   #SearchField {
