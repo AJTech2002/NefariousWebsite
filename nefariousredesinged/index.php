@@ -103,27 +103,123 @@
 
         </div>
 
-        <div id="CategoryManagement">
+        <div style="position: relative; "id="CategoryManagement">
+            <h2 style="position: absolute; margin-left: calc(50% - 80px);"> CATEGORIES </h2>
             <div class="CenterContainer">
-              <div style="background-color: blue;"> </div>
-              <div> </div>
-              <div style="background-color: blue;"> </div>
-              <div> </div>
-              <div style="background-color: blue;"> </div>
-              <div> </div>
+              <div class="CategoryNavigation"><?php echoSpecialIcon("navigation/002-back","class='rightarrowcategory'","","") ?></div>
+              <div class="CategoryContainer">
+                <div style="background-color: #e2e2e2;" id="FirstHoverShow" class="CenterContainer CategoryHoverShow">
+                  <div style="background-color: #8dc63f;" class="TopHalfImage"></div>
+                  <h3 class="TopHalfCategoryName">LATEST POST</h3>
+                  <p>This is the descriptio on the latest post in this category, it will be shown here in this awesome little thing here something blah blah blah...</p>
+                  <div class="ButtonContainer">
+                    <div class="LightGreenCallToAction" id="FirstBackShowButton" style="margin-right: 10px; margin-left: 10px; background-color: #3ab0e1;">Go Back</div>
+                    <div class="LightGreenCallToAction"   style="margin-left: 10px; margin-right: 10px; ">Read More</div>
+                  </div>
+                </div>
+                  <div style="background-color: #e2e2e2;" class="CenterContainer MainContainer">
+                    <div style="background-color: #EAAB39;" class="TopHalfImage"></div>
+                    <h3 class="TopHalfCategoryName">CATEGORY NAME</h3>
+                    <p>This is a basic description of what this category is about, and what we do on this
+                      just a basic overview that's all ~ this will be a custom post type </p>
+                      <div class="ButtonContainer">
+                        <div class="LightGreenCallToAction" style="margin-right: 10px; margin-left: 10px;">See All</div>
+                        <div class="LightGreenCallToAction" id="FirstHoverShowButton" style="margin-left: 10px; margin-right: 10px; background-color: #3ab0e1;">Latest Post</div>
+                      </div>
+                    <?php echoSpecialIcon("navigation/copy-content","class='pagecount'","",""); ?>
+                   <h6 style="font-size: 15px; position: absolute; left: 40px; bottom: -20px;">10</h6>
+                 </div>
+               </div>
+              <div class="CategoryContainer">
+                 <div style="background-color: #e2e2e2;" id="SecondHoverShow" class="CenterContainer CategoryHoverShow">
+                   <div style="background-color: #8dc63f;" class="TopHalfImage"></div>
+                   <h3 class="TopHalfCategoryName">LATEST POST</h3>
+                   <p>This is the descriptio on the latest post in this category, it will be shown here in this awesome little thing here something blah blah blah...</p>
+                   <div class="ButtonContainer">
+                     <div class="LightGreenCallToAction" id="SecondBackShowButton" style="margin-right: 10px; margin-left: 10px; background-color: #3ab0e1;">Go Back</div>
+                     <div class="LightGreenCallToAction"   style="margin-left: 10px; margin-right: 10px; ">Read More</div>
+                   </div>
+                 </div>
+                   <div style="background-color: #e2e2e2;" class="CenterContainer MainContainer">
+                     <div style="background-color: #EAAB39;" class="TopHalfImage"></div>
+                     <h3 class="TopHalfCategoryName">CATEGORY NAME</h3>
+                     <p>This is a basic description of what this category is about, and what we do on this
+                       just a basic overview that's all ~ this will be a custom post type </p>
+                       <div class="ButtonContainer">
+                         <div class="LightGreenCallToAction" style="margin-right: 10px; margin-left: 10px;">See All</div>
+                         <div class="LightGreenCallToAction"  id="SecondHoverShowButton" style="margin-left: 10px; margin-right: 10px; background-color: #3ab0e1;">Latest Post</div>
+                       </div>
+                     <?php echoSpecialIcon("navigation/copy-content","class='pagecount'","",""); ?>
+                    <h6 style="font-size: 15px; position: absolute; left: 40px; bottom: -20px;">10</h6>
+                  </div>
+                </div>
+              <div class="CategoryContainer">
+                  <div style="background-color: #e2e2e2;" id="ThirdHoverShow" class="CenterContainer CategoryHoverShow">
+                    <div style="background-color: #8dc63f;" class="TopHalfImage"></div>
+                    <h3 class="TopHalfCategoryName">LATEST POST</h3>
+                    <p>This is the descriptio on the latest post in this category, it will be shown here in this awesome little thing here something blah blah blah...</p>
+                    <div class="ButtonContainer">
+                      <div class="LightGreenCallToAction" id="ThirdBackShowButton" style="margin-right: 10px; margin-left: 10px; background-color: #3ab0e1;">Go Back</div>
+                      <div class="LightGreenCallToAction"   style="margin-left: 10px; margin-right: 10px; ">Read More</div>
+                    </div>
+                  </div>
+                    <div style="background-color: #e2e2e2;" class="CenterContainer MainContainer">
+                      <div style="background-color: #EAAB39;" class="TopHalfImage"></div>
+                      <h3 class="TopHalfCategoryName">CATEGORY NAME</h3>
+                      <p>This is a basic description of what this category is about, and what we do on this
+                        just a basic overview that's all ~ this will be a custom post type </p>
+                        <div class="ButtonContainer">
+                          <div class="LightGreenCallToAction" style="margin-right: 10px; margin-left: 10px;">See All</div>
+                          <div class="LightGreenCallToAction" id="ThirdHoverShowButton" style="margin-left: 10px; margin-right: 10px; background-color: #3ab0e1;">Latest Post</div>
+                        </div>
+                      <?php echoSpecialIcon("navigation/copy-content","class='pagecount'","",""); ?>
+                     <h6 style="font-size: 15px; position: absolute; left: 40px; bottom: -20px;">10</h6>
+                   </div>
+                 </div>
+              <div class="CategoryNavigation"> <?php echoSpecialIcon("navigation/001-next","class='rightarrowcategory'","","") ?> </div>
             </div>
         </div>
+
+        <script>
+          function CreateButtonOpacity (buttonName, backButtonName, targetName) {
+          $(buttonName).click(function() {
+            $(targetName).css('z-index','1');
+            $(targetName).fadeTo( "fast" , 1, function() {
+              // Animation complete.
+            });
+          });
+
+          $(targetName).mouseleave(function() {
+            $(targetName).fadeTo( "fast" , -0.3, function() {
+              $(targetName).css('z-index','-1');
+            });
+
+          });
+
+
+          $(backButtonName).click(function() {
+            $(targetName).fadeTo( "fast" , -0.3, function() {
+              $(targetName).css('z-index','-1');
+            });
+
+          });
+          }
+          CreateButtonOpacity('#FirstHoverShowButton','#FirstBackShowButton','#FirstHoverShow');
+          CreateButtonOpacity('#SecondHoverShowButton','#SecondBackShowButton','#SecondHoverShow');
+          CreateButtonOpacity('#ThirdHoverShowButton','#ThirdBackShowButton','#ThirdHoverShow');
+        </script>
 
         <div id="Left03" style="">
             <div id="SubscribeBox" class="CenterContainer">
                 <div id="SubscribeBanner"><h3>SUBSCRIBE</h3></div>
+                <h4 style="font-size: 20px; margin-left:30px; margin-right: 20px; font-family: 'Open Sans', sans-serif; height: 90px; text-overflow: clip;">Put in your email to receive the greatest and latest content every week, so you never miss out!</h4>
                 <input type="text" placeholder="Search for Anything" class="InputBoxContainer"/>
+                <div class="ButtonContainer"><div class="LightGreenCallToAction">SUBSCRIBE!</div></div>
             </div>
         </div>
 
         <div id="Left04" style="">
-          <div class="Seperator" style="margin-left: 20px; margin-right: 20px; margin-top: 40px;"></div>
-          <h3 style="margin-left: 40px; margin-top: 20px;"> LATEST POSTS </h3>
+          <h3 style="margin-left: 40px; margin-top: 40px;"> LATEST POSTS </h3>
 
           <div class="LatestPost">
             <div class="PostThumbnail" style="width: 90px; height: 90px; background-color:#EAAB39;"></div>
@@ -188,7 +284,7 @@
             <div class="LightGreenCallToAction">More</div>
           </div>
         </div>  -->
-        <div id="LeftQuoteBlock" style="background-color: #DBDCDD; grid-column-start: 1; grid-column-end: 3; grid-row: 7;">
+        <div id="LeftQuoteBlock" style="padding-top: 10px; margin-top: 30px; background-color: #DBDCDD; grid-column-start: 1; grid-column-end: 3; grid-row: 7;">
           <h3 style="position: relative; top: -20px;"> <q style="font-family:'Francois One', sans-serif;">IT ALWAYS SEEMS IMPOSSIBLE UNTIL IT'S DONE</q> </br> </h3>
            <b style="position: relative; top: 10px; "> ~ NELSON MANDELA </b>
         </div>
@@ -269,9 +365,9 @@
               <div class="LightGreenCallToAction">More?</div>
             </div>!-->
             <div style="background-color:#e2e2e2; height: 1950px; position: relative; top: -5px;">
-                <div class="SimpleLog" style="height: 150px; background-color:#e2e2e2;">
+                <div class="SimpleLog" style="height: 150px;">
                   <div style="width: 90%;"class="Seperator"></div>
-                  <h5 style="margin-left: 40px; background-color:#e2e2e2;">DEVELOPMENT LOG</h5>
+                  <h5 style="margin-left: 40px; ">DEVELOPMENT LOG</h5>
                   <p> This is a simple description of what
                     this post was about, sometimes this will
                     just be a log so have a little tag explaining, this needs to be  </p>
@@ -359,11 +455,136 @@
           </div>
         </div> -->
 
-        <div style="background-color: red; grid-column: 2; grid-row: 5;"></div>
-        <div style="background-color: yellow; grid-column: 2; grid-row: 6;"></div>
-        <div style="background-color: blue; grid-column: 1; grid-row: 6;"></div>
+        <div id="SocialHolders" style="grid-column: 2; grid-row: 5; margin-right: 20px;">
+          <div class="TwitterHolder">
+            <a class="twitter-timeline" href="https://twitter.com/CodeWithAjay?ref_src=twsrc%5Etfw">Tweets by CodeWithAjay</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+          </div>
+          <div class="InstagramHolder">
+
+                <?php
+                  $post   = get_post( 17 );
+                  $output =  apply_filters( 'the_content', $post->post_content );
+
+                  echo $output;
+                ?>
+
+          </div>
+        </div>
+        <div id="Upcoming" style="position: relative; grid-column: 1; grid-row: 6; margin-left: 20px;">
+          <h3 style="position: relative; width: 100%; text-align: center; top: -20px; "> UPCOMING CONTENT </h3>
+          <div class="FullContainer" style="">
+            <div style="background-color: #D1D3D4; " class="TutorialPost">
+                <div class="HoverContainer">
+                  <h4 style="margin-left: 20px;"> ABOUT </h4>
+                  <p style="position: relative; top: -25px;"> This is the description of the tutorial that </br>
+                    you are about to click on today </br> I hope you really
+                    learn something from this </p>
+
+                </div>
+                <div class="TitleBox">
+                  <h2> TITLE OF THIS POST </h2>
+                </div>
+
+            </div>
+            <div style="background-color: #D1D3D4; " id="Second" class="TutorialPost">
+                <div class="HoverContainer">
+                  <h4 style="margin-left: 20px;"> ABOUT </h4>
+                  <p style="position: relative; top: -25px;"> This is the description of the tutorial that </br>
+                    you are about to click on today </br> I hope you really
+                    learn something from this </p>
+                </div>
+                <div class="TitleBox">
+                  <h2> TITLE OF THIS POST </h2>
+                </div>
+
+            </div>
+            <div style="background-color: #D1D3D4; " style="grid-column: 3;" class="TutorialPost">
+                <div class="HoverContainer">
+                  <h4 style="margin-left: 20px;"> ABOUT </h4>
+                  <p style="position: relative; top: -25px;"> This is the description of the tutorial that </br>
+                    you are about to click on today </br> I hope you really
+                    learn something from this </p>
+                </div>
+                <div class="TitleBox">
+                  <h2> TITLE OF THIS POST </h2>
+                </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div id="BottomPostsList" style="grid-column:1; grid-row: 5;">
+          <section style="height: 80px; width: 90%; background-color: #d1d3d4; margin: auto;">
+            <h3 style="width: 100%; text-align: left; padding-left: 20px; position: relative; top: -15px;"> LATEST CONTENT </h3>
+            <?php echoSpecialIcon("navigation/001-next","class='backarrowbottom'","","") ?>
+            <b class="backarrowbottom" style="text-align: center;"> 1 </b>
+            <?php echoSpecialIcon("navigation/002-back","class='backarrowbottom'","","") ?>
+          </section>
+          <section class="RowGridHolder" style="height: 100%; width: 90%; background-color: #dddddd; margin: auto;">
+            <div class="LatestContent">
+              <div class="FullContainer" style="grid-column: 1/3">
+              <h2>Post Title</h2>
+              <p> Description of this post will be shown here, but this doesnt just have to be a post, it can be a tutorial or even a new YouTube Video </p>
+              </div>
+              <h6 style="font-size: 15px; color: #414042; text-align: center; align-self: center;">01/04/18</h6>
+              <div class="FullContainer ContentCategoryTypeContainer">
+                <h6 class="PostTitleFont" style="font-size: 15px;">YouTube Video</h6>
+                <div class="ButtonContainer"><div class="LightGreenCallToAction" style="">GO TO POST</div></div>
+              </div>
+            </div>
+            <div class="LatestContent">
+              <div class="FullContainer" style="grid-column: 1/3">
+              <h2>Post Title</h2>
+              <p> Description of this post will be shown here, but this doesnt just have to be a post, it can be a tutorial or even a new YouTube Video </p>
+              </div>
+              <div class="FullContainer">
+
+              </div>
+            </div>
+            <div class="LatestContent">
+              <div class="FullContainer" style="grid-column: 1/3">
+              <h2>Post Title</h2>
+              <p> Description of this post will be shown here, but this doesnt just have to be a post, it can be a tutorial or even a new YouTube Video </p>
+              </div>
+              <div class="FullContainer">
+
+              </div>
+            </div>
+            <div class="LatestContent">
+              <div class="FullContainer" style="grid-column: 1/3">
+              <h2>Post Title</h2>
+              <p> Description of this post will be shown here, but this doesnt just have to be a post, it can be a tutorial or even a new YouTube Video </p>
+              </div>
+              <div class="FullContainer">
+
+              </div>
+            </div>
+            <div class="LatestContent">
+              <div class="FullContainer" style="grid-column: 1/3">
+              <h2>Post Title</h2>
+              <p> Description of this post will be shown here, but this doesnt just have to be a post, it can be a tutorial or even a new YouTube Video </p>
+              </div>
+              <div class="FullContainer">
+
+              </div>
+            </div>
+            <div class="LatestContent">
+              <div class="FullContainer" style="grid-column: 1/3">
+              <h2>Post Title</h2>
+              <p> Description of this post will be shown here, but this doesnt just have to be a post, it can be a tutorial or even a new YouTube Video </p>
+              </div>
+
+              <div class="FullContainer">
+
+              </div>
+            </div>
+          </section>
+        </div>
 
     </div>
 
   <body>
+
+  <?php get_footer(); ?>
 </html>
