@@ -12,7 +12,8 @@
 .FullBody {
   display: grid;
   grid-template-columns: 1fr 0.65fr;
-  grid-template-rows: 450px 450px 700px 400px 1200px 400px 100px 700px;
+  grid-template-rows: 450px 450px 700px 600px 1200px 400px 100px 1400px;
+  grid-auto-flow:
   height: 10000px;
   background-color: #f2f2f2;
 }
@@ -210,8 +211,14 @@ h2 {
 
 }
 
+#Left03 .CenterContainer {
+  width: 90%;
+  height: 90%;
+  top: 5%;
+}
+
 #Left04 {
-  grid-row: 5;
+  grid-row: 8/9;
   grid-column: 1;
 }
 
@@ -236,6 +243,11 @@ h2 {
 #SubscribeBox {
   background-color: #D1D3D4;
   border-radius: 5px;
+}
+
+#SubscribeBanner {
+  font-family: 'Open Sans', sans-serif;
+  padding-left: 10px;
 }
 
 #SubscribeBanner {
@@ -264,9 +276,9 @@ h2 {
 }
 
 #SubscribeBox > .InputBoxContainer {
-  position: absolute;
+  position: relative;
 
-  top: 90px;
+  top: 0px;
 
   width: 75%;
   height: 40px;
@@ -556,12 +568,203 @@ h2 {
 }
 
 #CategoryManagement > .CenterContainer {
-  background-color: red;
   width: 95%;
   height: 95%;
   top: 2.5%;
 
   display: grid;
-  grid-template-columns: 0.2fr 1fr 1fr 1fr 1fr 0.2fr;
+  grid-template-columns: 0.2fr 1fr 1fr 1fr 0.2fr;
+}
 
+.CategoryNavigation {
+  display: flex;
+  justify-content: center;
+}
+
+.CategoryContainer > .CenterContainer {
+    width: 95%;
+}
+
+.rightarrowcategory {
+  width: 100%;
+  height: 50px;
+  margin: auto;
+}
+
+.TopHalfImage {
+  height: 200px;
+  width: 95%;
+  margin: auto;
+  margin-top: 2%;
+}
+
+.CategoryContainer
+{
+  position: relative;
+}
+
+.TopHalfCategoryName {
+  font-size: 23px;
+  margin: auto;
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.CategoryContainer .CenterContainer p {
+  width: 92%;
+  height: 20%;
+  margin: auto;
+  margin-top: 10px;
+}
+
+.MainContainer {
+  text-overflow:ellipsis;
+}
+
+ .CategoryHoverShow {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  left: 0px;
+  bottom: 0px;
+  z-index: -1;
+  opacity: 0;
+}
+
+
+.CategoryHoverShow > .ButtonContainer {
+  position: relative;
+  top: 35px;
+}
+
+.ButtonContainer {
+  width: 100%;
+  height: 70px;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
+}
+
+.pagecount {
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  bottom: 13px;
+  margin-left: 12px;
+}
+
+
+/* SOCIAL HOLDER SECTION INCLUDING TWITTER */
+
+#SocialHolders {
+  display: grid;
+  grid-template-rows: 1.5fr 1fr;
+}
+
+.TwitterHolder {
+  padding: 15px;
+  background-color: #dddddd;
+  border-radius: 10px;
+}
+
+#sb_instagram #sbi_load .sbi_follow_btn svg.fa-instagram {
+  margin-right: 0px;
+}
+
+#sb_instagram #sbi_load .fa-spinner, #sb_instagram .sbi_follow_btn .fa, #sb_instagram .sbi_follow_btn svg {
+  width: 50px;
+  height: 50px;
+}
+
+.feed {
+  border-radius: 5px;
+}
+
+.InstagramHolder {
+  background-color: #dddddd;
+  border-radius: 10px;
+  margin-top: 10px;
+  padding: 15px;
+}
+
+.FullContainer {
+  width: 100%;
+  height: 100%;
+}
+
+.FullContainer .TutorialPost {
+  height: 90%;
+}
+
+.FullContainer .TutorialPost .TitleBox {background-color: #8dc63f;}
+
+#Upcoming {
+  top: 10px;
+}
+
+#Upcoming .FullContainer {
+  position: relative;
+  top: -30px;
+  height: 80%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 10px;
+}
+
+#Upcoming .HeightContainer {
+  background-color: #dddddd;
+  height: 100%;
+  width: 90%;
+  display: grid;
+  grid-template-rows: 80% 20%;
+}
+
+/* BOTTOM POST LIST CSS */
+
+#BottomPostsList {
+  position: relative;
+  overflow: visible;
+  display: flex;
+  flex-direction: column;
+}
+
+.backarrowbottom {
+  width: 30px;
+  height: 30px;
+  position: relative;
+  top: -75px;
+  margin-right: 20px;
+  float: right;
+}
+
+.RowGridHolder {
+  display: grid;
+  grid-template-rows: repeat(5,1fr);
+  grid-row-gap: 7px;
+}
+
+.LatestContent {
+  display: grid;
+  grid-template-columns: 1fr 0.5fr 0.5fr 1fr;
+  grid-column-gap: 5px;
+  margin-left: 10px;
+}
+
+.ContentCategoryTypeContainer {
+  background-color: #d1d3d4;
+  border-radius: 7px;
+  width: 95%;
+  margin: auto;
+  display: flex;
+  flex-direction:column-reverse;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+.LatestContent .CenterContainer {
+  width: 100%;
+  height: 100%;
 }
