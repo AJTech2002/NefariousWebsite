@@ -398,6 +398,8 @@ h2 {
 }
 
 .SimpleLog > h5 {
+  font-family: Raleway;
+  font-weight: normal;
   position: relative;
   top: -30px;
 }
@@ -454,7 +456,6 @@ h2 {
 
 .LatestPost > h4 {
   font-family: Raleway;
-  font-weight: bolder;
   font-size: 25px;
   position: relative;
   right: -160px;
@@ -754,8 +755,7 @@ h2 {
 
 .ContentCategoryTypeContainer {
   background-color: #d1d3d4;
-  border-radius: 7px;
-  width: 95%;
+  width: 100%;
   margin: auto;
   display: flex;
   flex-direction:column-reverse;
@@ -767,4 +767,34 @@ h2 {
 .LatestContent .CenterContainer {
   width: 100%;
   height: 100%;
+}
+
+
+/*ALL FOOTER CSS IS FOUND UNDER FIRST HALF CSS */
+.FooterHolder {
+
+}
+
+.InnerContainer {
+  background-color: #d7d8d8;
+  position: relative;
+  top: 6%;
+  width: 96%;
+  height: 80%;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1fr 10px 1fr 10px 1fr;
+}
+
+#FooterSubscribe {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  align-content: center;
+  justify-content: center;
+}
+
+#FooterSubscribe > .InputBoxContainer {
+  width: 95%;
+  height: 30px;
 }
